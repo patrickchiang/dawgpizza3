@@ -19,14 +19,14 @@ $(function() {
     for (var i = 0; i < com.dawgpizza.menu.drinks.length; i++) {
         var drinks = com.dawgpizza.menu.drinks[i];
         var litag = $("<ul><li></li></ul>");
-        $(litag).html(drinks.name + " $" + drinks.price);
+        $(litag).html(drinks.name + " ($" + drinks.price + ")");
         $(litag).appendTo(".drinks").addClass("indent").addClass("sides");
     }
 
     for (var i = 0; i < com.dawgpizza.menu.desserts.length; i++) {
         var desserts = com.dawgpizza.menu.desserts[i];
         var litag = $("<ul><li></li></ul>");
-        $(litag).html(desserts.name + " $" + desserts.price);
+        $(litag).html(desserts.name + " ($" + desserts.price + ")");
         $(litag).appendTo(".desserts").addClass("indent").addClass("sides");
     }
 });
